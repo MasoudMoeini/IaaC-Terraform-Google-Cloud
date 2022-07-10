@@ -1,0 +1,8 @@
+review.txt
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+#terraform.tfvars
+.terraform.lock.hcl
+.Ds_Store
+private.key
