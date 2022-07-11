@@ -6,3 +6,4 @@ terraform.tfstate.backup
 .terraform.lock.hcl
 .Ds_Store
 private.key
+warm-rookery-325409-35ed5af86623.json

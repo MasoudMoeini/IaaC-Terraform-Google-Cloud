@@ -1,5 +1,5 @@
 provider "google" {
-  project = "{warm-rookery-325409}"
+  project = "warm-rookery-325409"
   region  = "us-central1"
   zone    = "us-central1-c"
 }
@@ -68,7 +68,7 @@ resource "google_compute_firewall" "flask" {
 
 # [START storage_bucket_tf_with_versioning]
 resource "google_storage_bucket" "default" {
-  name          = "bucket-tfstate"
+  name          = "bucket-myflask-c0195b8e"
   force_destroy = false
   location      = "US"
   storage_class = "STANDARD"
