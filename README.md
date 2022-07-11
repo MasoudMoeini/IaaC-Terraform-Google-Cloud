@@ -1,5 +1,5 @@
 # IaaC-Terraform-Google-Cloud
-Clone Repo and configure GCP CLI [Instruction](https://cloud.google.com/sdk/docs/install)
+Clone Repo and configure GCP CLI [Instruction](https://cloud.google.com/docs/terraform/get-started-with-terraform)
 ``` 
 source ~/.zshrc
 ```
@@ -26,7 +26,28 @@ terraform plan
 ```
 terraform apply 
 ```
-To access web applicaton from your local laptop
+Connect to the VM with SSH:<br/>
+- Go to the VM Instances page.<br/>
+- Find the VM with the name flask-vm.<br/>
+- In Connect column, click SSH. in upcomming vm terminal Create app.py in flask vm and run it<br/>
+```
+nano app.py
+```
+```
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_cloud():
+  return 'Hello Cloud!'
+
+app.run(host='0.0.0.0')
+```
+```
+python app.py
+curl http://0.0.0.0:5000
+```
+To access web applicaton from your local laptop add following script to the end of main.tf
 ```
 output "Web-server-URL" {
  value = join("",["http://",google_compute_instance.default.network_interface.0.access_config.0.nat_ip,":5000"])
