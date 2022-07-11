@@ -1,9 +1,7 @@
-review.txt
 .terraform/
 terraform.tfstate
 terraform.tfstate.backup
 #terraform.tfvars
 .terraform.lock.hcl
 .Ds_Store
-private.key
 warm-rookery-325409-35ed5af86623.json

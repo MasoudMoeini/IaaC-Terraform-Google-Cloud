@@ -59,5 +59,5 @@ terraform output
 the response should be like this:<br/>
 Web-server-URL = "http://35.232.182.68:5000"
 ```
-terraform delete
+terraform destroy
 ```
