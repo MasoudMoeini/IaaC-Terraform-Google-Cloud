@@ -1,5 +1,5 @@
 # IaaC-Terraform-Google-Cloud
-The purpose of this repository is to dploy flask web application infrustracture into GCP<br/>
+The purpose of this repository is to deploy flask web application infrustracture into GCP<br/>
 Clone Repo and configure GCP CLI [Instruction](https://cloud.google.com/docs/terraform/get-started-with-terraform)
 ``` 
 source ~/.zshrc
